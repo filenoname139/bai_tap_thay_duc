@@ -1,6 +1,13 @@
-Bài 1: Chọn quà
-  chạy 3 for sau đó tìm số lớn nhất với (a[i]+a[j]+a[k]+gcd(a[i],a[j],a[k]); '\n'
-Bài 3: số nguyên tố dặc biệt
-  dùng hàm tính tổng cs && sàng nguyên tố
-  tạo hàm kiểm tra có phải số đặc biệt không?
-  Cuối cùng là chạy for tự L -> R rồi đếm xe có bao nhiêu phần tử thỏa mãn
+🧠 Ý tưởng giải bài
+🎁 Bài 1: Chọn quà
+Chạy 3 vòng for (i < j < k).
+Với mỗi bộ ba, tính a[i] + a[j] + a[k] + gcd(a[i], a[j], a[k]).
+Lấy giá trị lớn nhất rồi in ra kèm '\n'.
+
+⚠️ Nếu gcd = 1 thì không có ước chung nguyên tố, khi đó X = 0 (không cộng 1).
+
+🔢 Bài 3: Số nguyên tố đặc biệt
+Viết hàm tính tổng chữ số.
+Dùng sàng nguyên tố để kiểm tra nguyên tố nhanh.
+Tạo hàm kiểm tra có phải số đặc biệt không.
+Chạy for từ L → R, đếm số phần tử thỏa mãn.
